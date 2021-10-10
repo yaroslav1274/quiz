@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    width: 100%;
+    background-color: #1d1d1d;
+}
+
+.screen {
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: 0.5s ease-in;
+}
+
+.screen h1 {
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.screen .circle {
+    position: absolute;
+    width: 55px;
+    transition: all, 0.3s ease-in;
+    height: 55px;
+    border-radius: 50%;
+    background: linear-gradient(blue, indigo);
+    z-index: -1;
+    top: 30px;
+    left: 0;
+    box-shadow: -3px 0 15px #111;
+}
+
+.screen h1:hover .circle {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.image1 {
+    pointer-events: none;
+    margin-top: 50px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    box-shadow: 3px 5px 20px #000;
+    position: absolute;
+    transform: translate(0, -200px);
+}
+
+.image1 div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+}
+
+.pic-top.one {
+    background-image: url('https://snaped.fns.usda.gov/sites/default/files/styles/crop_ratio_7_5/public/seasonal-produce/2018-05/lemons.jpg?itok=W6bdcxfq');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(0, -100%) rotateX(180deg); 
+    transform-origin: bottom;
+}
+
+.pic-front.one {
+    background-image: url('https://text2image.com/user_images/202110/text2image_R4208591_20211010_112303.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image1:hover .pic-front.one{
+    transform: translate(0, -100%) rotateX(90deg);
+}
+
+.screen .hint {
+    position: absolute;
+    transform: translate(0, 10px);
+}
+
+.screen .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 300px;
+}
+
+.options div svg {
+    width: 100px;
+    height: 100px;
+    margin: 0 30px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.options div svg:hover {
+    transform: rotate(360deg);
+}
+
+.cls-1 {
+    fill:#2ca3db;fill-rule:evenodd;
+}
+
+.cls-2 {
+    fill:#fff;
+}
+
+.facebook {
+    background-color: #fff;
+    border-radius: 10px;
+}
+#tesla1 {
+    background-color: #fff;
+    border-radius: 10px;
+}
+.apple {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.level {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.timer {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 30px;
+}
+
+.image2 {
+    pointer-events: none;
+    margin-top: 50px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    box-shadow: 3px 5px 20px #000;
+    position: absolute;
+    transform: translate(0, -200px);
+}
+
+.image2 div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+}
+
+.pic-top.two {
+    background-image: url('https://ldaily.ua/wp-content/uploads/2021/04/25ffa47381faabcc74a6d20e2710f19f.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(0) rotateX(0deg); 
+    transform-origin: bottom;
+}
+
+.pic-front.two {
+    background-image: url('https://text2image.com/user_images/202110/text2image_R4208591_20211010_112303.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image2:hover .pic-front.two{
+    transform: translate(0, -100%) rotateX(0deg);
+}
+
+.image3 {
+    pointer-events: none;
+    margin-top: 50px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    box-shadow: 3px 5px 20px #000;
+    position: absolute;
+    transform: translate(0, -200px);
+}
+
+.image3 div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+}
+
+.pic-top.three {
+    transform: translate(0) rotateX(0deg); 
+    transform-origin: bottom;
+}
+
+.pic-front.three {
+    background-image: url('https://text2image.com/user_images/202110/text2image_R4208591_20211010_112303.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.guesses {
+    position: absolute;
+    transform: translate(0, 130px);
+}
+
+.screen.up {
+    margin-top: -100vh;
+}
+
+@media (max-width: 550px) {
+    .level1 {
+        font-size: 20px;
+        width: 50px;
+        right: 37px;
+        position: absolute;
+        top: 20px;
+    }
+    .timer {
+        font-size: 25px;
+        left: 10px;
+    }
+    .hint {
+        width: 330px;
+    }
+    .guesses {
+        width: 300px;
+    }
+    .image2 {
+        width: 150px;
+        height: 150px;
+    }
+}
